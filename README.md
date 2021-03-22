@@ -27,7 +27,7 @@ In this project we'll learn how to use Apache Spark on Cloud Dataproc to distrib
 * `MYBUCKET="${USER//google}-image-${RANDOM}"`
 * `echo MYBUCKET=${MYBUCKET}`
 * `gsutil mb gs://${MYBUCKET}`
-* `curl https://www.publicdomainpictures.net/pictures/20000/velka/family-of-three-871290963799xUk.jpg | gsutil cp - gs://${MYBUCKET}/imgs/family-of-three.jpg
+* `curl https://www.publicdomainpictures.net/pictures/20000/velka/family-of-three-871290963799xUk.jpg | gsutil cp - gs://${MYBUCKET}/imgs/family-of-three.jpg`
 * `curl https://www.publicdomainpictures.net/pictures/10000/velka/african-woman-331287912508yqXc.jpg | gsutil cp - gs://${MYBUCKET}/imgs/african-woman.jpg`
 * `curl https://www.publicdomainpictures.net/pictures/10000/velka/296-1246658839vCW7.jpg | gsutil cp - gs://${MYBUCKET}/imgs/classroom.jpg`
 * `gsutil ls -R gs://${MYBUCKET}`
