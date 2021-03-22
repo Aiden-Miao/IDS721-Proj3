@@ -1,6 +1,5 @@
 # Distributed Image Processing in Cloud DataProc
-
-
+In this project we'll learn how to use Apache Spark on Cloud Dataproc to distribute a computationally intensive task onto a cluster of machines.
 
 ## Set up
 1. Make sure the default computer Service Account is present and has the editor role.
@@ -44,7 +43,7 @@ See each directories README for more information.
 
 ## Submit job to Cloud Dataproc
 * `curl https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_frontalface_default.xml | gsutil cp - gs://${MYBUCKET}/haarcascade_frontalface_default.xml`
-`cd ~/cloud-dataproc/codelabs/opencv-haarcascade`
+* `cd ~/cloud-dataproc/codelabs/opencv-haarcascade`
 ``` 
 gcloud dataproc jobs submit spark \
 --cluster ${MYCLUSTER} \
@@ -54,48 +53,8 @@ gs://${MYBUCKET}/imgs/ \
 gs://${MYBUCKET}/out/
 ```
 
-You can find more Dataproc resources in these github repositories:
+## Check Job Status
+Navigation Menu > DataProc > Jobs
 
-### Dataproc projects
-* [Dataproc initialization
-  actions](https://github.com/GoogleCloudPlatform/dataproc-initialization-actions)
-* [GCP Token Broker](https://github.com/GoogleCloudPlatform/gcp-token-broker)
-* [Dataproc Custom Images](https://github.com/GoogleCloudPlatform/dataproc-custom-images)
-* [Dataproc Spawner](https://github.com/GoogleCloudPlatform/dataprocspawner)
-
-### Connectors
-* [Hadoop/Spark GCS Connector](https://github.com/GoogleCloudPlatform/bigdata-interop/tree/master/gcs)
-* [Spark BigQuery Connector](https://github.com/GoogleCloudPlatform/spark-bigquery-connector)
-* [Hadoop BigQuery Connector](https://github.com/GoogleCloudPlatform/bigdata-interop/tree/master/bigquery)
-* [Spark Pubsub Connector](https://github.com/GoogleCloudPlatform/bigdata-interop/tree/master/pubsub)
-* [Spark Spanner Connector](https://github.com/GoogleCloudPlatform/cloud-spanner-spark-connector)
-* [Hive Bigquery Storage Handler](https://github.com/GoogleCloudPlatform/hive-bigquery-storage-handler)
-
-### Kubernetes Operators
-* [Spark kubernetes operator](https://github.com/GoogleCloudPlatform/spark-on-k8s-operator)
-* [Flink kubernetes operator](https://github.com/GoogleCloudPlatform/flink-on-k8s-operator)
-
-### Examples
-* [Dataproc Python
-  examples](https://github.com/GoogleCloudPlatform/python-docs-samples/tree/master/dataproc)
-* [Dataproc Pubsub Spark Streaming example](https://github.com/GoogleCloudPlatform/dataproc-pubsub-spark-streaming)
-* [Dataproc Java Bigtable sample](https://github.com/GoogleCloudPlatform/cloud-bigtable-examples/tree/master/java/dataproc-wordcount)
-* [Dataproc Spark-Bigtable samples](https://github.com/GoogleCloudPlatform/cloud-bigtable-examples/tree/master/scala)
-
-## For more information
-For more information, review the [Dataproc
-documentation](https://cloud.google.com/dataproc/docs/). You can also
-pose questions to the [Stack
-Overflow](http://stackoverflow.com/questions/tagged/google-cloud-dataproc) community
-with the tag `google-cloud-dataproc`.
-See our other [Google Cloud Platform github
-repos](https://github.com/GoogleCloudPlatform) for sample applications and
-scaffolding for other frameworks and use cases.
-
-## Contributing changes
-
-* See [CONTRIBUTING.md](CONTRIBUTING.md)
-
-## Licensing
-
-* See [LICENSE](LICENSE)
+## Output
+Navigation Menu > Storage
