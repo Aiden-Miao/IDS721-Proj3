@@ -15,9 +15,6 @@ In this project we'll learn how to use Apache Spark on Cloud Dataproc to distrib
 * `sudo apt-get update`
 * `sudo apt-get install -y bc scala sbt`
 
-See each directories README for more information.
-
-
 ## Set up Feature Detector Files and Launch build
 * `sudo apt-get update`
 * `gsutil cp gs://spls/gsp124/cloud-dataproc.zip .`
